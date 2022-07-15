@@ -7,7 +7,7 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
         sh 'ls'
         sleep 2
@@ -16,7 +16,7 @@ pipeline {
           echo 'kmkmk'
         }
 
-        sh 'kkkk'
+        input(message: '123', id: 'id', ok: 'ok', submitter: 'Submitter', submitterParameter: 'SubmitterParameter')
       }
     }
 
