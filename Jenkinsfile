@@ -4,6 +4,8 @@ pipeline {
     stage('1') {
       steps {
         sh 'echo "hello"'
+        sleep 10
+        sleep 10
       }
     }
 
