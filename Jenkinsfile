@@ -17,6 +17,7 @@ pipeline {
         }
 
         input(message: '123', id: 'id', ok: 'ok', submitter: 'Submitter', submitterParameter: 'SubmitterParameter')
+        sh 'echo "123"'
       }
     }
 
